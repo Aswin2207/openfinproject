@@ -12,13 +12,19 @@ export class PageControlDirective {
    this.scrollEvent=fromEvent(el.nativeElement,'scroll').subscribe((res:any)=>{
     if(res.target.scrollTop>10){
       let div=this.el.nativeElement.querySelector('app-header');
-      this.div=div.querySelector('section');
-      this.div.style.height="70px";
+      let section=div.querySelector('section');
+      let img=div.querySelector('img');
+      section.style.height="75px";
+      img.style.height="80px";
+      img.style.width="80px";
     }
     else{
       let div=this.el.nativeElement.querySelector('app-header');
-      this.div=div.querySelector('section');
-      this.div.style.removeProperty("height");
+      let section=div.querySelector('section');
+      let img=div.querySelector('img');
+      img.style.height="100px";
+      img.style.width="100px";
+      section.style.removeProperty("height");
       
     }
    })
