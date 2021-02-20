@@ -1,6 +1,6 @@
-<div class="main">
+<div class="main" appPageControl>
   <app-header></app-header>
-  <div class="top-container">
+  <div  class="top-container">
   <div class="left-container">
   <div class="top-image">
     <img src="assets/images/We make it Super Sim.svg">
@@ -55,7 +55,7 @@
         <label>Your EMI will be</label>
         <strong>15,000</strong>
       </div>
-      <button mat-flat-button class="btn" >Get Money</button>
+      <button mat-flat-button class="btn " [disableRipple]="true">Get Money</button>
     </div>
  
      </div>

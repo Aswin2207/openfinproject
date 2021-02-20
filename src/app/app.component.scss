@@ -8,6 +8,7 @@ app-header{
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: auto;
     .top-container,.bottom-container{
         flex-grow: 1 ;
         padding-top: 1rem;
@@ -234,5 +235,6 @@ app-header{
     .bottom-container{
         background: url('src/assets/bg-images/sol_wave_bg.svg');
     }
+    
 }
 
