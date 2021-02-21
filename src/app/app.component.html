@@ -1,99 +1,120 @@
 <div class="main" appPageControl>
   <app-header></app-header>
-  <div  class="top-container">
-  <div class="left-container">
-  <div class="top-image">
-    <img src="assets/images/We make it Super Sim.svg">
-    <hr>
-  </div>
-  <div class="bottom-image">
-    <img src="assets/images/collect_img-video.png">
-  </div>
-  </div>
-  <div class="right-container">
-  <mat-card>
-    <div class="card-header">
-    <label>Eligibility Calculator</label>
-  </div>
-  <div class="card-content">
-    <label>Monthly Income</label>
-    <strong>$1,50,000</strong>
-    <mat-slider class="card-slider" min="1" max="5" step="0.5" value="1.5"></mat-slider>
-  </div>
-  <div class="card-content">
-    <label>Monthly Expense</label>
-    <strong>$50,000</strong>
-    <mat-slider class="card-slider" min="1" max="5" step="0.5" value="1.5"></mat-slider>
-  </div>
-  <div class="card-content">
-    <label>Repayment Tenure</label>
-    <mat-select>
-      <mat-option *ngFor="let item of months"  [value]="item.value">
-        {{item.value}}
-      </mat-option>
-    </mat-select>
-  </div>
-  <div class="card-toggle">
-  <span>Do you have any existing plan</span>
-  <mat-slide-toggle></mat-slide-toggle>
-  </div>
-  <div class="card-input">
-  <mat-form-field class="example-full-width">
-    <label>EMI of existing loan(optional)</label>
-    <input matInput  value="15,000">
-  </mat-form-field>
-  </div>
-  </mat-card>
-   <div class="card-rightcont">
-     <div class="card-rightdata">
-       <div class="card-text">
-      <div class="card-data">
-        <label>Loan Amount</label>
-        <strong>1,00,000</strong>
+  <div class="top-container">
+    <div class="left-container1">
+      <div class="top-image">
+        <img src="assets/images/We make it Super Sim.svg" />
+        <hr />
       </div>
-      <div class="card-data">
-        <label>Your EMI will be</label>
-        <strong>15,000</strong>
+      <div class="bottom-image">
+        <img src="assets/images/collect_img-video.png" />
       </div>
-      <button mat-flat-button class="btn " [disableRipple]="true">Get Money</button>
     </div>
- 
-     </div>
-    </div>
-  </div>
-  <div>
-  </div>
-  </div>
-  <div class="bottom-container">
-   <div class="left-container">
-     <div class="left-innercont">
-    <div class="left-cardcont">
-      <mat-card *ngFor="let item of cards |slice:0:3">
-        <div><img src={{item.img}}></div>
-        <label>{{item.label}}</label>
-        <span>{{item.description}}</span>
+    <div class="right-container1">
+      <mat-card>
+        <div class="card-header">
+          <label>Eligibility Calculator</label>
+        </div>
+        <div class="card-content">
+          <label>Monthly Income</label>
+          <strong> <span>&#8377;</span> 1,50,000</strong>
+          <mat-slider
+            class="card-slider"
+            min="1"
+            max="5"
+            step="0.5"
+            value="1.5"
+          ></mat-slider>
+          <div class="range">
+            <small>&#8377; 1,00,000</small>
+            <small>&#8377; 3,00,000</small>
+          </div>
+        </div>
+        <div class="card-content">
+          <label>Monthly Expense</label>
+          <strong><span>&#8377;</span> 50,000</strong>
+          <mat-slider
+            class="card-slider"
+            min="1"
+            max="5"
+            step="0.5"
+            value="1.5"
+          ></mat-slider>
+        </div>
+        <div class="card-content">
+          <label>Repayment Tenure</label>
+          <mat-select>
+            <mat-option *ngFor="let item of months" [value]="item.value">
+              {{ item.value }}
+            </mat-option>
+          </mat-select>
+        </div>
+        <div class="card-toggle">
+          <span>Do you have any existing plan</span>
+          <!-- <mat-slide-toggle></mat-slide-toggle> -->
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="card-input">
+          <mat-form-field class="example-full-width">
+            <label>EMI of existing loan(optional)</label>
+            <input matInput value="&#8377; 15,000" />
+          </mat-form-field>
+        </div>
       </mat-card>
-    </div>
-    <div class="right-cardcont">
-     <mat-card *ngFor="let item of cards |slice:-2">
-      <div><img src={{item.img}}></div> 
-       <label>{{item.label}}</label>
-       <span>{{item.description}}</span>
-     </mat-card>
-    </div>
-  </div>
-   </div>
-   <div class="right-container">
-    <div class="right-contdata">
-      <div>
-        <img src="assets/images/Boost your business.svg">
+      <div class="card-rightcont">
+        <div class="card-rightdata">
+          <div class="card-text">
+            <div class="card-data">
+              <label>Loan Amount</label>
+              <strong><span>&#8377;</span> 1,00,000</strong>
+            </div>
+            <div class="card-data">
+              <label>Your EMI will be</label>
+              <strong><span>&#8377;</span> 15,000</strong>
+            </div>
+            <button mat-flat-button class="btn" [disableRipple]="true">
+              Get Money
+            </button>
+          </div>
+        </div>
       </div>
-      <hr>
-      <span>
-      Get your hands on a term loan that's crafted for your business
-      </span>
-      <button mat-button  >Get an Open Account</button>
     </div>
-   </div>
+    <div></div>
+  </div>
+  <br>
+  <div class="bottom-container">
+    <div class="left-container">
+      <div class="left-innercont">
+        <div class="left-cardcont">
+          <mat-card *ngFor="let item of cards | slice: 0:3">
+            <div><img src="{{ item.img }}" /></div>
+            <label>{{ item.label }}</label>
+            <span>{{ item.description }}</span>
+          </mat-card>
+        </div>
+        <div class="right-cardcont">
+          <mat-card *ngFor="let item of cards | slice: -2">
+            <div><img src="{{ item.img }}" /></div>
+            <label>{{ item.label }}</label>
+            <span>{{ item.description }}</span>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="right-contdata">
+        <div>
+          <img src="assets/images/Boost your business.svg" />
+        </div>
+        <hr />
+        <span>
+          Get your hands on a term loan that's crafted for your business
+        </span>
+        <button mat-button>Get an Open Account</button>
+      </div>
+    </div>
   </div>
 </div>
