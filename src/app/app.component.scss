@@ -424,7 +424,9 @@ app-header {
     }
   }
   .bottom-container {
-    background: url("src/assets/bg-images/sol_wave_bg.svg");
+    background: url('../assets/bg-images/sol_wave_bg.svg') top 190px center;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 }
 
