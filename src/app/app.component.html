@@ -17,13 +17,11 @@
         </div>
         <div class="card-content">
           <label>Monthly Income</label>
-          <strong> <span>&#8377;</span> 1,50,000</strong>
-          <mat-slider
+          <strong> <span>&#8377;</span>{{income}}</strong>
+          <mat-slider (change)="incomeChange($event,1)"
             class="card-slider"
-            min="1"
-            max="5"
-            step="0.5"
-            value="1.5"
+            min="0"
+            max="300000"
           ></mat-slider>
           <div class="range">
             <small>&#8377; 1,00,000</small>
@@ -32,26 +30,24 @@
         </div>
         <div class="card-content">
           <label>Monthly Expense</label>
-          <strong><span>&#8377;</span> 50,000</strong>
+          <strong><span>&#8377;</span>{{expense}}</strong>
           <mat-slider
             class="card-slider"
-            min="1"
-            max="5"
-            step="0.5"
-            value="1.5"
+            (change)="incomeChange($event,2)"
+              min="0"
+            max="50000"
           ></mat-slider>
         </div>
         <div class="card-content">
           <label>Repayment Tenure</label>
-          <mat-select>
-            <mat-option *ngFor="let item of months" [value]="item.value">
+          <mat-select [(ngModel)]="montvalue">
+            <mat-option *ngFor="let item of months"  [value]="item.value">
               {{ item.value }}
             </mat-option>
           </mat-select>
         </div>
         <div class="card-toggle">
           <span>Do you have any existing plan</span>
-          <!-- <mat-slide-toggle></mat-slide-toggle> -->
           <label class="switch">
             <input type="checkbox" checked>
             <span class="slider round"></span>

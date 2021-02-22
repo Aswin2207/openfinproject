@@ -13,7 +13,6 @@ app-header {
   .top-container,
   .bottom-container {
     flex-grow: 1;
-    padding-top: 1rem;
     display: flex;
 
     .left-container1 {
@@ -230,7 +229,7 @@ app-header {
       padding: 8rem 8rem 1rem 8rem;
       display: flex;
       align-items: center;
-      background: url('../assets/bg-images/circle.svg') right -68px top -226px , url('../assets/bg-images/accounting_dots.svg') right 76px bottom -20px;
+      background: url('../assets/bg-images/circle.svg') right -68px top -226px , url('../assets/bg-images/accounting_dots.svg') right 76px bottom -14px;
       background-size: 110%, 43%;
       background-repeat: no-repeat, no-repeat;
       mat-card {

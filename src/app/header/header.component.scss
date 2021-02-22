@@ -20,6 +20,9 @@
       padding: 10px 16px;
       cursor: pointer;
     }
+    span:hover {
+   color:#663399;
+  }
     button{
       border-radius: 24px !important;
       height: 37px;
@@ -30,10 +33,14 @@
         box-shadow: 0px 0px 8px #00000033;
         border: 2px solid #663399;
         color: #663399 !important;
+ 
     }
     .btn2{
         background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
         box-shadow: 0px 0px 8px #00000033;
     }
 }
+
+
+
 }

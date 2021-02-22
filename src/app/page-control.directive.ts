@@ -14,7 +14,10 @@ export class PageControlDirective {
       let div=this.el.nativeElement.querySelector('app-header');
       let section=div.querySelector('section');
       let img=div.querySelector('img');
-      section.style.height="75px";
+      let imgdiv=div.querySelector('div');
+      section.style.height="70px";
+      imgdiv.style.marginTop="15px";
+      section.style.background="white";
       img.style.height="80px";
       img.style.width="80px";
     }
@@ -22,10 +25,12 @@ export class PageControlDirective {
       let div=this.el.nativeElement.querySelector('app-header');
       let section=div.querySelector('section');
       let img=div.querySelector('img');
+      let imgdiv=div.querySelector('div');
       img.style.height="100px";
       img.style.width="100px";
       section.style.removeProperty("height");
-      
+      section.style.removeProperty("background");
+      imgdiv.style.removeProperty("margin-top");
     }
    })
   }
