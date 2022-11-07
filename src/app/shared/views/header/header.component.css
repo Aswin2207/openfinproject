@@ -1,0 +1,14 @@
+:host {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .bg {background-color:rgb(35, 97,146) ; } 
+  .header{
+   
+    margin-top:-10px;
+  }
+  .bg-white{
+    background: #ffffff;
+  }
+

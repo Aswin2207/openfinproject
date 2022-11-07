@@ -1,0 +1,6 @@
+.bg {background-color:rgb(35, 97,146) ; } 
+@media (max-width: 990px){
+    .bg{
+        background-color: #ffffff;
+    }
+}

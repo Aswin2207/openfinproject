@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeComponent } from './home.component';
+import { AutodeskViewerComponent } from './autodesk-viewer.component';
 
-describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
+describe('AutodeskViewerComponent', () => {
+  let component: AutodeskViewerComponent;
+  let fixture: ComponentFixture<AutodeskViewerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
+      declarations: [ AutodeskViewerComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HomeComponent);
+    fixture = TestBed.createComponent(AutodeskViewerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

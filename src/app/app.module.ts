@@ -1,28 +1,30 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
-import { FormsModule } from '@angular/forms';
-import { PageControlDirective } from './page-control.directive';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; 
+import { MainModule } from './main/modules/main.module';
+import { SharedModule } from './shared/views/modules/shared/shared.module';
+import { AutodeskViewerComponent } from './autodesk-viewer/autodesk-viewer.component'; 
+import { ViewerModule } from 'ng2-adsk-forge-viewer';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    HeaderComponent,
-    PageControlDirective
+    AutodeskViewerComponent, 
   ],
   imports: [
     BrowserModule,
-    MaterialModule,
-    FormsModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
+    AppRoutingModule, 
+    SharedModule,
+    MainModule,
+    BrowserAnimationsModule,
+    NgbModule,
+    ViewerModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
